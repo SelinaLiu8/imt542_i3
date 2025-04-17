@@ -65,7 +65,7 @@ export default function WeatherApp() {
               {weather.location.country}
             </h3>
             <p className="text-lg">{weather.current.condition.text}</p>
-            <p className="text-2xl">{weather.current.temp_c}°C</p>
+            <p className="text-2xl">{weather.current.temp_f}°F</p>
           </div>
         )}
 
@@ -77,7 +77,7 @@ export default function WeatherApp() {
                 <div key={day.date} className="forecast_item">
                   <p className="font-semibold">{day.date}</p>
                   <p>{day.day.condition.text}</p>
-                  <p>🌡️ {day.day.avgtemp_c}°C</p>
+                  <p>🌡️ {day.day.avgtemp_f}°F</p>
                 </div>
               ))}
             </div>
