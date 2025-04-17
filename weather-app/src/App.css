@@ -1,0 +1,36 @@
+.app_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  position: relative;
+  top: -20%;
+}
+
+.search_container {
+  position: relative;
+  top: -20%;
+}
+
+.current_container {
+  position: relative;
+  top: -10%;
+  text-align: center;
+}
+
+.forecast_list {
+  display: flex;
+}
+
+.forecast_title {
+  text-align: center;
+}
+
+.forecast_item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
