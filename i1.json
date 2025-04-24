@@ -1,0 +1,28 @@
+{
+    "information_systems": [
+        {
+            "name": "Canvas Learning Management System",
+            "primary_purpose": "To manage and deliver educational content, assignments, grading, and communication between students and instructors.",
+            "access_method": "Web-based platform accessible through login at institutional Canvas portals or via the Canvas mobile app.",
+            "information_structure": "Course-centric structure, organizing data into courses, modules, assignments, users, and grades. This structure is appropriate for managing and tracking academic progress and participation.",
+            "data_format": "JSON for API interactions; CSV and Excel for grade exports and reports.",
+            "url": "https://www.instructure.com/canvas"
+        },
+        {
+            "name": "Library Management System",
+            "primary_purpose": "To manage the acquisition, cataloging, circulation, and inventory of books and resources in a library.",
+            "access_method": "Accessible through a library’s internal network or public web portal by staff and patrons.",
+            "information_structure": "Relational database with tables for books, members, loans, and reservations—ideal for tracking availability and borrowing history.",
+            "data_format": "MARC, CSV, and XML for bibliographic and transaction data.",
+            "url": "https://koha-community.org"
+        },
+        {
+            "name": "Tableau",
+            "primary_purpose": "Business Intelligence (BI) and data visualization – to help users explore, analyze, and visualize data from various sources.",
+            "access_method": "Web-based and desktop application (Tableau Desktop, Tableau Server, or Tableau Online).",
+            "information_structure": "Star schema or flat table structure optimized for data visualization and fast querying.",
+            "data_format": "Supports multiple formats including CSV, Excel, JSON, SQL databases, and live data connectors.",
+            "url": "https://www.tableau.com"
+        }
+      ]
+}
