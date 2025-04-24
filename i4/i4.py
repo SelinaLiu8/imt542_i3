@@ -33,11 +33,11 @@ def access_api():
     - May require keys or rate limits.
     - Internet connection needed.
     """
-    url = "https://jsonplaceholder.typicode.com/posts"
+    url = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en"
     response = requests.get(url)
     data = response.json()
-    print("First post from API:")
-    print(data[0])
+    print("Random Fact from API:")
+    print(data['text'])
 
 # 3. Access CSV from a URL
 def access_csv():
@@ -51,8 +51,6 @@ def access_csv():
     Cons:
     - Requires download or access URL.
     - Format may vary (delimiter, encoding).
-
-    Make sure you have `pandas` installed: pip install pandas
     """
     url = "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
     df = pd.read_csv(url)
@@ -63,4 +61,4 @@ def access_csv():
 if __name__ == "__main__":
     access_html()
     access_api()
-    access_csv()
+    # access_csv()
