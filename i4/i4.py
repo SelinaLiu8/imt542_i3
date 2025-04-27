@@ -52,13 +52,16 @@ def access_csv():
     - Requires download or access URL.
     - Format may vary (delimiter, encoding).
     """
-    url = "https://people.sc.fsu.edu/~jburkardt/data/csv/addresses.csv"
-    df = pd.read_csv(url)
-    print("CSV Preview:")
-    print(df.head())
+    filepath = "titanic_survival.csv"
+    try:
+        df = pd.read_csv(filepath)
+        print("CSV Preview:")
+        print(df.head())
+    except FileNotFoundError:
+        print(f"File not found: {filepath}")
 
 # Run all
 if __name__ == "__main__":
     access_html()
     access_api()
-    # access_csv()
+    access_csv()
